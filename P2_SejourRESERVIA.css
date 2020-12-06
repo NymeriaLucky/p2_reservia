@@ -35,6 +35,7 @@ a:hover {
   
 @media all and (max-width: 1024px)
 {
+
     section
     {
         display: block;
@@ -470,6 +471,19 @@ h2.title {
 /* MOBILES seuls*/
   
   @media (max-width: 766px) {
+
+   .navbar {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    align-items: flex-start;
+  }
+
+  .heb { order 2; }
+  .act { order 3; }
+  .insc { order 1; }
+
+
     .container {
       padding: 0; }
     .header .filters .filters__name {
