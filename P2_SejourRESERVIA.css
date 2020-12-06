@@ -1,6 +1,6 @@
 
 body{
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Raleway', Arial;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -79,7 +79,12 @@ a:hover {
   background-color: #000000;
   color: black;
 }
-
+#inscription {
+    right: 0;
+    top: 0; /* Si je veux le fixer en haut */
+    font-weight: 700;
+    margin-right: 0;
+}
 .header .title p {
         font-size: 14px;
 }
@@ -195,7 +200,7 @@ a:hover {
 /* MAIN */
 
 h2.title {
-    font-family: 'RechtmanPlain', Arial, serif; 
+    font-family: 'Raleway', Arial, serif; 
     font-size: 20px;
     font-weight: bold;
     flex-basis: 100%;
@@ -447,7 +452,7 @@ h2.title {
 .footer .footer__section h5{
 	font-size: 16px;
 	font-weight: bold;
-  font-family: 'RechtmanPlain', Arial, serif;
+  font-family: 'Raleway', Arial, serif;
 }
 .footer .footer__section ul {
     margin-top: 15px;
