@@ -9,10 +9,8 @@ body{
  
 @font-face {
   font-family: 'Raleway';
-  src: url('Raleway.eot') format('eot'),
-  url('Raleway.woff') format('woff'),
-  url('Raleway.ttf') format('truetype'),
-  url('Raleway.svg') format('svg');
+  src: url('police/raleway/Raleway-MediumItalic.ttf') format('ttf'),
+  url('police/raleway/Raleway-Bold.ttf') format('ttf')
 }
 
 ul, li{
