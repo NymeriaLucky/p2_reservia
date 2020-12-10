@@ -1,0 +1,81 @@
+Répertoire de travail
+=====================
+/home/myriam/Bureau/formation front-end OpenClassrooms/projet 2/Projet 2 - Reservia/p2_reservia
+
+Répertoire GitHub
+=================
+https://github.com/NymeriaLucky/p2_reservia
+
+git init -> Création du repository
+
+git add -> Ajout des fichiers
+
+
+Mise à jour GIT
+===============
+
+1) Ouvrir un terminal
+
+2) Aller dans le répertoire :
+
+cd '/home/myriam/Bureau/formation front-end OpenClassrooms/projet 2/Projet 2 - Reservia/p2_reservia'
+
+3) Taper la commande :
+pwd
+
+elle doit afficher :
+/home/myriam/Bureau/formation front-end OpenClassrooms/projet 2/Projet 2 - Reservia/p2_reservia
+
+4) Taper les commandes git suivantes :
+
+4.1) Commit (prise en compte des modifications)
+
+git commit -m "Date/heure de modification" --all
+
+Elle doit afficher quelque chose comme :
+(il doit pas y avoir d'erreur)
+
+[main c10f3a7] 06/12/2020 - 16:18
+ 1 file changed, 1 insertion(+)
+
+4.2) Push (recopie dans github)
+
+git push --all
+Saisir le compte git et le mot de passe (keepass)
+
+Elle doit afficher quelque chose comme :
+(il doit pas y avoir d'erreur)
+
+Énumération des objets: 5, fait.
+Décompte des objets: 100% (5/5), fait.
+Compression par delta en utilisant jusqu'à 8 fils d'exécution
+Compression des objets: 100% (3/3), fait.
+Écriture des objets: 100% (3/3), 315 octets | 315.00 Kio/s, fait.
+Total 3 (delta 1), réutilisés 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/NymeriaLucky/p2_reservia.git
+   0215269..c10f3a7  main -> main
+
+
+git status
+
+
+Transfert des fichiers sur le site Web
+======================================
+scp P2* legoll@legoll.fr:/home4/legoll/www/p2_reservia/
+Saisir le mot de passe
+
+Les fichiers sont correctement transférés quand on a l'affichage :
+P2_Marseille.html                                                               100%   15KB  74.5KB/s   00:00    
+P2_SejourRESERVIA.css                                                           100%   15KB 147.6KB/s   00:00    
+P2_SejourRESERVIA.html                                                          100% 3736    35.6KB/s   00:00    
+
+
+Test
+====
+https://legoll.fr/p2_reservia/P2_SejourRESERVIA.html
+
+
+
+
+
