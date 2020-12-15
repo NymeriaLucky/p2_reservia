@@ -1,18 +1,21 @@
 <!DOCTYPE html>
-<html lang="fr">
-<meta charset="utf-8">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="css/P2_SejourRESERVIA.css">
     <link rel="shortcut icon" href="images/logo/Reservia.svg" type="image/x-icon">
+
     <script src="https://kit.fontawesome.com/8d747dca8a.js" crossorigin="anonymous"></script>
+
     <title>Réservia</title>
 </head>
+
 <body>
     <div class="container">
         <!-- HEADER -->
-        <header class="header">
+        <div class="header">
             <nav class="navbar">
                 <div class="navbar__brand">
                     <a href="index.html">
@@ -22,10 +25,10 @@
             
                 <div class="topnav">
                     <div class="inscription">
-                        <a href="Inscription" >S'inscrire</a>
+                        <a href="#Inscription">S'inscrire</a>
                     </div>
                     <div class="hebact">
-                        <a href="P2_Marseille.html#hébergement" class="heb">Hébergement</a>
+                        <a href="P2_Marseille.html#hebergement" class="heb">Hébergement</a>
                         <a href="P2_Marseille.html#activites" class="act">Activités</a>
                     </div>
                 </div>
@@ -35,17 +38,18 @@
                 <h1 class="Title">Trouvez votre hébergement pour des vacances de rêve</h1>
                 <p>En plein centre ville ou en pleine nature</p>
             </div>
+
             <div class="search">
                 <div class="group__input">
                     <span class="fa fa-map-marker"></span>
                     <input type="text" name="search" id="search" placeholder="Marseille, France">
-                    <button type="submit">Rechercher</button>
-                    <a href="P2_Marseille.html"> 
+                    <button type="submit"><i class="fas fa-search"></i>Rechercher</button>
+                    <!--<a href="P2_Marseille.html"> !-->
                 </div>
             </div>
+
             <div class="filters">
-                <h3 class="filters__name">Filtres
-                </h3>
+                <h3 class="filters__name">Filtres</h3>
                 <div class="filters__item">
                     <span class="fas fa-money-bill-wave"></span>Economique
                 </div>
@@ -59,10 +63,11 @@
                     <span class="fas fa-dog"></span>Animaux autorisés
                 </div>
             </div>
-            <p>Bonjour. Souhaitez-vous consulter la page de nos lieux de réservations à <a href="P2_Marseille.html"> Marseille,France ?</a></p>
-            
-           <!--  FOOTER -->
-        <footer class="footer">
+            <p>Bonjour. Souhaitez-vous consulter la page de nos lieux de réservations à <strong><a href="P2_Marseille.html"> Marseille,France ?</a></strong></p>
+        </div>
+
+        <!--  FOOTER -->
+        <div class="footer">
             <div class="footer__section">
                 <h5>A propos</h5>
                 <ul>
@@ -71,6 +76,7 @@
                     <li class="text"><a href="#">Données et confidentialité</a></li>
                 </ul>
             </div>
+
             <div class="footer__section">
                 <h5>Nos hébergements</h5>
                 <ul>
@@ -78,6 +84,7 @@
                     <li class="text"><a href="#">Soumettre votre hôtel</a> </li>
                 </ul>
             </div>
+
             <div class="footer__section">
                 <h5>Assistance</h5>
                 <ul>
@@ -85,7 +92,7 @@
                     <li class="text"><a href="#">Nous contacter</a></li>
                 </ul>
             </div>
-        </footer>
+        </div>
     </div>
 </body>
 </html>
