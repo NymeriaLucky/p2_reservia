@@ -106,7 +106,7 @@ h1, h2 {
     font-weight: 600;
 }
 
-.search .group__input input: placeholder {
+.search .group__input input::placeholder {
     font-size: 14px;
     font-weight: bold;
     color: #000;
