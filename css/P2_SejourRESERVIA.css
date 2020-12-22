@@ -1,4 +1,4 @@
-* {box-sizing: border-box;}
+*{box-sizing: border-box;}
 
 #Bloc_page_flexbox {
   display: flex;
@@ -9,7 +9,7 @@
  align-content: space-around;
  justify-content: right;
 }
-/*En exemple pour les classes*/
+/* exempl for class*/
 .element
 {
     margin: auto;
@@ -32,7 +32,7 @@ body {
 .navbar__logo {
 	position: absolute;
 	display: block;
-    height: 60px;
+    height: 65px;
     left: 15px;
 }
 
@@ -51,10 +51,10 @@ h1, h2 {
   border-top: solid;
   border-color: #0065FC;
   color: #0065FC;
-  padding: 20px;
+  padding: 35px;
   justify-content: stretch;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 18px;
   background-color: white;
 }
 /* Links - change color on hover */
@@ -72,7 +72,7 @@ h1, h2 {
 	order:2;
  /*.heb { order 1; } .act { order 2; }.insc { order 0; }*/
 }
-.heb a{
+.heb a {
 	display: flex;
 	order:1;
 	align-items: stretch;
@@ -87,6 +87,7 @@ h1, h2 {
 .search .group__input {
         justify-content: center;
         align-items: center;
+        color: blue;
 }
 
 .search .group__input span {
@@ -180,7 +181,7 @@ h1, h2 {
 
 .info p span{
     margin-bottom: 20px;
-    font-size: 15px;
+    font-size: 20px;
     display: inline-block;
     line-height: 20px;
     border-radius: 50%;
@@ -190,10 +191,10 @@ h1, h2 {
     font-weight: 700;
     color: #0065FC;
     margin-right: 3px;
+  
 }/*HEADER END*/
-/* MAIN  */ 
-/* LES PLUS POPULAIRES ASIDE*/
-aside {
+/* MAIN  */ /* LES PLUS POPULAIRES ASIDE*/
+   aside {
     order: 2;
     flex-basis: 30%;
     display: flex;
@@ -204,7 +205,7 @@ aside {
     padding: 15px;
 }
 
-.title {
+   aside .title {
     width: 100%;
     flex-basis: 0;
     display: flex;
@@ -213,7 +214,7 @@ aside {
     align-items: center;   
 }
 
-.card__populaire {
+   aside .card__populaire {
     display: flex;
     padding: 5px;
     background-color: #fff;
@@ -222,12 +223,12 @@ aside {
     margin: 15px;
 }
 
-.card__populaire:hover {
+   aside .card__populaire:hover {
     transform: scale(1.01);
     box-shadow: 0 0 3px 2px #F2F2F2;
 }
 
-.card__populaire .card__body {
+   aside .card__populaire .card__body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -235,22 +236,22 @@ aside {
     padding: 10px;
 }
 
-.card__populaire .card__body h3 {
+   aside .card__populaire .card__body h3 {
     font-size: 16px;
     margin-top: -5px;
 }
 
-.card__populaire .card__body .notation {
+   aside .card__populaire .card__body .notation {
     align-self: stretch;
 }
 
-.card__populaire .card__image {
+   aside .card__populaire .card__image {
     height: 10em;
     width: 45%;
     overflow: hidden;    
 }
 
-.card__populaire .card__image img {
+   aside .card__populaire .card__image img {
     height: 100%;
     width: 100%;
     border-radius: 8px 0 0 8px;  
@@ -258,7 +259,7 @@ aside {
     object-position: center;
 }
 /* HEBERGEMENT A MARSEILLE */
-main .heberg {
+main .heberg  {
     display: flex;
     justify-content: stretch;
     margin-bottom: 30px;
@@ -352,7 +353,7 @@ main .heberg {
     font-size: 13px;
 }
 /* ACTIVITES A MARSEILLE*/
-.activites__list {
+.activites__list #act{
     display: flex;
     align-items: stretch;
     justify-content: stretch;
@@ -473,7 +474,6 @@ footer .footer__section a, ul {
     font-size: 18px; 
     line-height: 140%;
 }
-
 /* MOBILES tablettes et écrans jusqu'à 1024px*/
 @media all and (max-width: 1024px) {
   section {
@@ -531,7 +531,7 @@ footer .footer__section a, ul {
   header {
     width: 100%;
     padding: 0;
-}
+ }
 
   header #title__page, .header .search, .header .filters, .header .info {
     padding: 0 8px;
@@ -542,7 +542,7 @@ footer .footer__section a, ul {
     height: 160px;
   }
 
-.navbar__logo {
+ .navbar__logo {
     position: absolute;
     display: block;
     height: 60px;
@@ -615,11 +615,11 @@ footer .footer__section a, ul {
       height: 12rem; 
   }
 
-main .heberg .hebergement__list .heberg__list__group .card__hebergement .image img {
+ main .heberg .hebergement__list .heberg__list__group .card__hebergement .image img {
       height: 100%;
   }
 
-main .heberg .hebergement__list .afficher {
+ main .heberg .hebergement__list .afficher {
       width: 90%;
       padding-left: 15px;
   }
@@ -675,40 +675,39 @@ main .heberg .hebergement__list .afficher {
   }
 
 }
-
-/* TABLETTES */
-  
+/* TABLETTES */  
 @media (min-width: 766px) and (max-width: 1200px) {
-.container {
+ .container {
     width: 100%;
     padding: 0 16px;
-}
+ }
 /* HEBERGEMENTS */
-.heberg {
+ .heberg {
     flex-direction: column;
     width: 100%;
-}
+ }
 
-.heberg .hebergement__list {
+ .heberg .hebergement__list {
     flex-basis: 100%;
     margin-right: 0;
     margin-top: 20px;
     order: 2;
-}
+ }
 /* ASIDE */
-aside h2.title {
+ aside h2.title {
     flex-basis: 100%;
-  }
+ }
 
-aside {
+ aside {
     flex-wrap: wrap;
+    justify-content: space-between;
     flex-direction: row;
     padding: 0;
     flex-basis: 100%;
     order: 1;
   }
 
-aside .name {
+ aside .name {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -716,7 +715,7 @@ aside .name {
     padding:  0 8px;
   }
 
-aside .card__populaire {
+ aside .card__populaire {
     width: 31%;
     height: 200px;
     display: flex;
@@ -730,22 +729,21 @@ aside .card__populaire {
     margin: 0 0 20px 0 ; 
   }
 
-aside .card__populaire .card__image {
+ aside .card__populaire .card__image {
     width: 100%;
     height: 200px;
     overflow: hidden;
     border-radius: 8px 8px 0 0;
   }
 
-aside .card__populaire .card__body {
+ aside .card__populaire .card__body {
     width: 100%;
     flex-basis: 100px;
   }
 
-aside .card__populaire .card__body div .card__populaire__title {
+ aside .card__populaire .card__body div .card__populaire__title {
     font-size: 16px;
     margin: 5px 0;
     width: 100%;
  }
-
 }

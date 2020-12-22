@@ -13,7 +13,7 @@ Outils fournis :
                               - La police du site est Raleway. Avec lien à télécharger
  
 Outils personnels choisis :
-- Krita à la place de photoshop qui est payant
+- Krita (à la place de photoshop qui est payant)
 - GIMP 
 - Git,Github (déjà inscrite sous le nom de Nymeria Lucky) et (Kraken non privé : en version gratuite limitée)
 - Css Grid
@@ -21,9 +21,10 @@ Outils personnels choisis :
 - Canva (en version gratuite limitée)
 - Mobile first
 - Cours OpenClassrooms: flexbox...
-- Workplace
+- Workplace groupe Séverine Carré
 - Moteur de recherche Google: références suplémentaires sur des sites comme MDN, w3school...
-- Réservia est publié et testé sur site personnel legoll.fr 
+- Réservia est publié et testé sur site personnel legoll.fr, sur les principaux navigateurs
+ 
 
 Etapes :
 1 .Charger les nouvelles maquettes desktop et mobiles du site Reservia fournis, images, logo, police, 
@@ -33,7 +34,7 @@ Etapes :
 5 . Rechercher des erreurs et problèmes de fonctionnabilités, tester F12.
 6 mettre dans le git au fur et à mesure de la construction en chaque fin de journéepour les changements.
 7 . Publier sur notre site legoll.fr et tester. 
-
+8 . Corrigé, testé, remis sur git, republié sur le site Legoll.fr mis livrable.
 
 Fonctionnalités :
 -*- Les usagers peuvent rechercher des hébergements dans la ville de leur choix.
@@ -196,5 +197,6 @@ Myriam G.
 Mise à jour le 6/12/2020
 Mise à jour le 10/12/2020
 Mise à jour le 14/12/2020
+Mise à jour le 18/12/2020
 _______________________________________________________________________________________________________________
 @NymeriaLucky ou Myriam Greder.
