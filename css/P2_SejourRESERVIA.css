@@ -9,7 +9,7 @@
  align-content: space-around;
  justify-content: right;
 }
-/* exempl for class*/
+/* for class*/
 .element
 {
     margin: auto;
@@ -191,9 +191,8 @@ h1, h2 {
     font-weight: 700;
     color: #0065FC;
     margin-right: 3px;
-  
-}/*HEADER END*/
-/* MAIN  */ /* LES PLUS POPULAIRES ASIDE*/
+}/*HEADER END*/ /* MAIN  */ 
+/* LES PLUS POPULAIRES ASIDE*/
    aside {
     order: 2;
     flex-basis: 30%;
@@ -205,7 +204,7 @@ h1, h2 {
     padding: 15px;
 }
 
-   aside .title {
+aside .title {
     width: 100%;
     flex-basis: 0;
     display: flex;
@@ -353,7 +352,7 @@ main .heberg  {
     font-size: 13px;
 }
 /* ACTIVITES A MARSEILLE*/
-.activites__list #act{
+.activites__list #activites{
     display: flex;
     align-items: stretch;
     justify-content: stretch;
@@ -474,7 +473,7 @@ footer .footer__section a, ul {
     font-size: 18px; 
     line-height: 140%;
 }
-/* MOBILES tablettes et écrans jusqu'à 1024px*/
+/* smart-phones pad and screens until 1024px*/
 @media all and (max-width: 1024px) {
   section {
       display: block;
@@ -510,9 +509,8 @@ footer .footer__section a, ul {
   	align-items:stretch;
   }
 }
-/* MOBILES seuls */  
+/* smart-phones only */  
 @media (max-width: 766px) {
-
   .navbar {
     display: flex;
     flex-flow: row wrap;
@@ -527,6 +525,7 @@ footer .footer__section a, ul {
   .filters .filters__name {
       flex-basis: 100%;
  }
+
 /* HEADER */
   header {
     width: 100%;
@@ -673,7 +672,6 @@ footer .footer__section a, ul {
   .footer__section {
       margin-bottom: 30px;
   }
-
 }
 /* TABLETTES */  
 @media (min-width: 766px) and (max-width: 1200px) {

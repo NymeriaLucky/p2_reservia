@@ -13,28 +13,30 @@ Outils fournis :
                               - La police du site est Raleway. Avec lien à télécharger
  
 Outils personnels choisis :
+- Sublime Text
 - Krita (à la place de photoshop qui est payant)
 - GIMP 
 - Git,Github (déjà inscrite sous le nom de Nymeria Lucky) et (Kraken non privé : en version gratuite limitée)
-- Css Grid
-- Sublime Text
-- Canva (en version gratuite limitée)
+- Css Grid dans les premières versions, puis flexbox
+- visual studio One
 - Mobile first
 - Cours OpenClassrooms: flexbox...
 - Workplace groupe Séverine Carré
 - Moteur de recherche Google: références suplémentaires sur des sites comme MDN, w3school...
 - Réservia est publié et testé sur site personnel legoll.fr, sur les principaux navigateurs
+- publication sur un site internet
+- testé W3C : http://validator.w3.org.
+- testé F12
  
-
 Etapes :
-1 .Charger les nouvelles maquettes desktop et mobiles du site Reservia fournis, images, logo, police, 
-2 .Charger et adapter Les icônes qui proviennent de la bibliothèque Font Awesome, les modifier avec GIMP, Krita si besoin.(Prendre note des couleurs fournis, dans l'ensemble, blanc, bleu et bleu clair, gris, police en noir) 
-3 .Traçage de la maquette et découpage pour définir les différents blocs dont elle est composée avec ce même outil, Gimp, et Canva pour identifier les calques.
-4 . Transcription en HTML et Css, inclure logo,couleurs,texte,icones et image, créer brekpoints et liens, recherche pour adapter, adapter mobile,tablette,(avec l'aide de la maquette mobile).
+1 . Charger les nouvelles maquettes desktop et mobiles du site Reservia fournis, images, logo, police, 
+2 . Charger et adapter Les icônes qui proviennent de la bibliothèque Font Awesome, les modifier avec GIMP, Krita si besoin.(Prendre note des couleurs fournis, dans l'ensemble, blanc, bleu et bleu clair, gris, police en noir) 
+3 . Traçage de la maquette et découpage pour définir les différents blocs dont elle est composée avec ce même outil, Gimp, et Canva pour identifier les calques.
+4 . Transcription en HTML et Css, inclure logo, couleurs,texte,icones et image, créer brekpoints et liens, recherches pour adapter, avec Flexbox, adapter mobile,tablette,(avec l'aide de la maquette mobile).
 5 . Rechercher des erreurs et problèmes de fonctionnabilités, tester F12.
-6 mettre dans le git au fur et à mesure de la construction en chaque fin de journéepour les changements.
+6 . Mettre dans le git au fur et à mesure de la construction en chaque fin de journée pour les changements, mises à jour, partage.
 7 . Publier sur notre site legoll.fr et tester. 
-8 . Corrigé, testé, remis sur git, republié sur le site Legoll.fr mis livrable.
+8 . Corrigé, testé, remis sur git, mises à jour et republié sur le site Legoll.fr mis livrable OPC.
 
 Fonctionnalités :
 -*- Les usagers peuvent rechercher des hébergements dans la ville de leur choix.
@@ -47,15 +49,14 @@ Ce champ de recherche, (bouton recherche) est donc champ de saisie, recherche, d
 
 -*-Les filtres ne sont pas fonctionnels pour cette version, en revanche, ils changent d’apparence au survol. Mon choix de l'effet le plus approprié est fait.
 
--*-Dans le menu, les liens “Hébergements” et “Activités” sont des ancres qui mènent aux sections de la page. Ok breakpoints crées.
+-*-Dans le menu, les liens “Hébergements” et “Activités” sont des ancres qui mènent aux sections de la page. Ok breakpoints crées. Testés actifs dans tous les formats.
 
 -*-Contraintes techniques :
-- Le site est également être adapté aux tablettes. OK (all), il l'est pour tous les format.
+- Le site est également être adapté aux tablettes. OK (all), il l'est pour tous les formats.
 -Les Adaptations nécessaires avec la mise en page sont faites, (tant qu’aucun élément n’est coupé et que le texte a une taille suffisante). Ok
 - Les breakpoints appropriés sont choisis. Ok
 - Le format le plus adapté par rapport à la résolution et au temps de chargement est choisit. Ok.
 - Le site est publié, corrigé et testé. ok
-
 
 Précisions de Sarah manadger à respecter:
 1 -Intégration
@@ -105,8 +106,6 @@ Utiliser un système de gestion de versions pour le suivi du projet et son hébe
 Implémenter une interface responsive
 
 Si tu as des questions n’hésite pas à m’écrire. Ou si tu veux refaire une soutenance.
-
-
 
                                             ___________________
 Références :
@@ -198,5 +197,6 @@ Mise à jour le 6/12/2020
 Mise à jour le 10/12/2020
 Mise à jour le 14/12/2020
 Mise à jour le 18/12/2020
+Mise à jour et correction le 22/12/2020
 _______________________________________________________________________________________________________________
 @NymeriaLucky ou Myriam Greder.
