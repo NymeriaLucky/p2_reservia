@@ -6,7 +6,7 @@ Projet : Intégration maquette Reservia :
 
 Outils fournis : 
 - Deux maquettes : l’une desktop et l’autre mobile
-- les images en différents formats,  Les icônes proviennent de la bibliothèque Font Awesome
+- les images en différents formats,  les icônes proviennent de la bibliothèque Font Awesome
 - Les couleurs de la charte : - le bleu #0065FC,
                               - sa version bleu plus claire #DEEBFF
                               - le gris pour le fond #F2F2F2
@@ -18,7 +18,7 @@ Outils personnels choisis :
 - GIMP 
 - Git,Github (déjà inscrite sous le nom de Nymeria Lucky) et (Kraken non privé : en version gratuite limitée)
 - Css Grid dans les premières versions, puis flexbox
-- visual studio One
+- Visual studio One
 - Mobile first
 - Cours OpenClassrooms: flexbox...
 - Workplace groupe Séverine Carré
@@ -26,7 +26,7 @@ Outils personnels choisis :
 - Réservia est publié et testé sur site personnel legoll.fr, sur les principaux navigateurs
 - publication sur un site internet
 - testé W3C : http://validator.w3.org.
-- testé F12
+- testé console F12
  
 Etapes :
 1 . Charger les nouvelles maquettes desktop et mobiles du site Reservia fournis, images, logo, police, 
