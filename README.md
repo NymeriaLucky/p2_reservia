@@ -1,2 +1,4 @@
-Site de réservation d'hébergements - partie frond end
+# Site de réservation d'hébergements
+## Partie frond end
+
 Réalisé en html5 et css3
