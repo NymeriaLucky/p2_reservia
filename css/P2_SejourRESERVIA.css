@@ -19,7 +19,6 @@ body {
 /* Header */
 .nav_logo {
   position: absolute;
-  display: block;
   height: 65px;
   left: 15px;
 }
@@ -47,7 +46,6 @@ body {
   background-color: #000000;
   color: black;
 }
-
 /* Search button */
 .search_form {
   margin-bottom: 15px;
@@ -62,7 +60,6 @@ body {
 }
 
 .search_form .group_input span {
-  display: inline-block;
   background-color: #F2F2F2;
   height: 36px;
   padding: 0 10px;
@@ -98,7 +95,6 @@ body {
   transform: translateY(-1px);
   box-shadow: 1px 1px 1px 1px #F2F2F2;
 }
-
 /* Header filter */
 .filters {
   display: flex;
@@ -122,7 +118,6 @@ body {
   border-radius: 39px;
   padding-right: 8px;
   padding-left: 47px;
-  position: relative;
   text-transform: capitalize;
   font-size: 14px;
   font-weight: bold; 
@@ -216,7 +211,7 @@ aside .populaire_list {
   flex-basis: 0;
   display: flex;
   justify-content: space-between;
-  height: 25px;
+  height: 35px;
   align-items: center;
 }
 
@@ -225,7 +220,7 @@ aside .card_populaire {
   padding: 5px;
   background-color: #fff;
   border-radius: 8px;
-  width: 90%;
+  width: 95%;
   margin: 15px;
 }
 
@@ -252,8 +247,8 @@ aside .card_populaire .card_body .notation {
 }
 
 aside .card_populaire .card_image {
-  height: 10em;
-  width: 45%;
+  height: 12em;
+  width: 52%;
   overflow: hidden;
 }
 
@@ -294,7 +289,7 @@ main .heberg {
 
 .heberg_list_group .card_hebergement {
   flex-basis: 30%;
-  height: 230px;
+  height: 300px;
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -312,7 +307,7 @@ main .heberg {
 
 .card_hebergement .image {
   width: 100%;
-  height: 14rem;
+  height: 35rem;
   overflow: hidden;
   border-radius: 8px 8px 0 0;
 }
@@ -461,11 +456,6 @@ main .heberg {
 /* ****************************** smartphone, tablet and screen until 1024px ****************************** */
 @media all and (max-width: 1024px) {
 
- section {
-  display: block;
-  width: auto;
- }
-
 .navbar {
   display: flex;
   float: left;
@@ -591,14 +581,14 @@ nav .nav_inscript .nav_hebact a .heb {
 }
 
 .card_hebergement {
-  width: 85%;
+  width: 86%;
   box-shadow: 0 0 6px 3px rgba(180, 178, 178, 0.274);
   border-radius: 15px;
 }
 
 .heberg .hebergement_list .heberg_list_group .card_hebergement .image {
   width: 100%;
-  height: 12rem; 
+  height: 16rem; 
 }
 
 .heberg .hebergement_list .heberg_list_group .card_hebergement .image img {
@@ -636,15 +626,19 @@ aside .populaire_list {
   flex-wrap: nowrap;
   width: 100%;
   padding: 0; 
-  height: auto;
   align-items:center;
-  height: 73rem;
+  height: 96rem;
 }
   
 .activites_list .activites_loisir .activite {
   flex-basis: 12rem;
-  width: 90%; 
+  width: 95%; 
   margin-top: 15px;
+}
+
+.activites_list .activites_loisir .activite img {
+  height: 30rem;
+  width: 100%;
 }
 
 .activite1, .activite2, .activite3, .activite4, .activite5, .activite6 {
@@ -704,7 +698,7 @@ aside .name {
 }
 
 aside .card_populaire {
-  width: 31%;
+  width: 32%;
   height: 200px;
   display: flex;
   justify-content: space-between;
@@ -730,7 +724,7 @@ aside .card_populaire .card_body {
 }
 
 aside .card_populaire .card_body div .card_populaire_title {
-  font-size: 16px;
+  font-size: 17px;
   margin: 5px 0;
   width: 100%;
 }
