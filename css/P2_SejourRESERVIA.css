@@ -45,12 +45,27 @@ body {
 .nav_inscript a.active {
   background-color: #000000;
   color: black;
+  order:0;
+}
+
+.act a {
+	display: flex;
+	order:2;
+ /* .heb { order 1; } .act { order 2; } .insc { order 0; } */
+}
+
+.heb a .active {
+	display: flex;
+	order:1;
+  align-items: stretch;
+  order:1;
 }
 /* Search button */
 .search_form {
-  margin-bottom: 15px;
+  margin-bottom: 5%;
   display: flex;
-  justify-content: flex-start;
+  align-content: flex-start;
+  vertical-align:-16%;
 }
 
 .search_form .group_input {
@@ -61,10 +76,12 @@ body {
 
 .search_form .group_input span {
   background-color: #F2F2F2;
-  height: 36px;
+  color: black;
+  height: 52px;
   padding: 0 10px;
-  line-height: 36px;
-  border-radius: 8px 0 0 8px;
+  line-height: 37px;
+  border-radius: 12px 0 0 12px;
+  align-content: stretch;
 }
 
 .search_form .group_input input {
@@ -76,7 +93,7 @@ body {
 }
 
 .search_form .group_input input::placeholder {
-  font-size: 14px;
+  font-size: 15px;
   font-weight: bold;
   color: #000;
 }
@@ -125,7 +142,7 @@ body {
 }
 
 .filters .filter_item:hover {
-  background-color: #0065FC;
+  background-color: #9fbff0;
   color: #fff;
   border: 2px solid #DEEBFF;
   transform: translateY(-1px);
@@ -168,31 +185,13 @@ footer .footer_section a, ul {
   font-size: 18px; 
   line-height: 140%;
 }
-/* Hébergements et activités */
-.info span {
-  margin-bottom: 20px;
-  font-size: 20px;
-  display: inline-block;
-  line-height: 20px;
-  border-radius: 50%;
-  width: 20px;
-  border: 1px solid #F2F2F2;
-  text-align: center;
-  font-weight: 700;
-  color: #0065FC;
-  margin-right: 3px;
-}
-
-.act a {
-	display: flex;
-	order:2;
- /* .heb { order 1; } .act { order 2; } .insc { order 0; } */
-}
-
-.heb a {
-	display: flex;
-	order:1;
-	align-items: stretch;
+/*------------------------------------- Hébergements et activités de la page2 Marseille----------------------------------------------*/
+.info1 img {
+  vertical-align:-16%;
+  padding-top: 10px;
+  width: 25px;
+  line-height: 36px;
+  align-self: start;
 }
 /* Les plus populaires (aside) */
 aside {
@@ -202,8 +201,8 @@ aside {
   flex-direction: column;
   align-items: center;
   background-color: #F2F2F2;
-  border-radius: 8px;
-  padding: 15px;
+  border-radius: 15px;
+  padding: 12px;
 }
 
 aside .populaire_list {
@@ -219,7 +218,7 @@ aside .card_populaire {
   display: flex;
   padding: 5px;
   background-color: #fff;
-  border-radius: 8px;
+  border-radius: 15px;
   width: 95%;
   margin: 15px;
 }
@@ -234,12 +233,19 @@ aside .card_populaire .card_body {
   flex-direction: column;
   justify-content: space-between;
   width: 70%;
-  padding: 10px;
+  border-radius: 15px;
+  padding: 25px;
 }
 
 aside .card_populaire .card_body h3 {
   font-size: 16px;
   margin-top: -5px;
+  text-align: left;
+}
+
+aside .card_populaire .card_body .name {
+  align-self: stretch;
+  padding: 6px;
 }
 
 aside .card_populaire .card_body .notation {
@@ -248,14 +254,14 @@ aside .card_populaire .card_body .notation {
 
 aside .card_populaire .card_image {
   height: 12em;
-  width: 52%;
+  width: 54%;
   overflow: hidden;
 }
 
 aside .card_populaire .card_image img {
   height: 100%;
   width: 100%;
-  border-radius: 8px 0 0 8px;
+  border-radius: 15px 0 0 15px;
   object-fit: cover;
   object-position: center;
 }
@@ -270,14 +276,15 @@ main .heberg {
   flex-basis: 70%;
   padding: 15px;
   margin: 0 15px 0 0;
-  border-radius: 8px;
+  border-radius: 15px;
   background-color: #F2F2F2;
   order: 1;
   flex-grow: 1;
 }
 
-.heberg .card_title h3 {
+.heberg .card_title .name h3 {
   font-size: 50px;
+  text-align: left;
 }
 
 .heberg_list_group {
@@ -296,7 +303,7 @@ main .heberg {
   flex-direction: column;
   background-color: #fff;
   padding: 5px;
-  border-radius: 8px;
+  border-radius: 15px;
   margin-bottom: 20px;
 }
 
@@ -307,9 +314,9 @@ main .heberg {
 
 .card_hebergement .image {
   width: 100%;
-  height: 35rem;
+  height: 30rem;
   overflow: hidden;
-  border-radius: 8px 8px 0 0;
+  border-radius: 15px 15px 0 0;
 }
 
 .card_hebergement .image img {
@@ -329,15 +336,17 @@ main .heberg {
 }
 
 .card_hebergement .card_body .card_text {
-  font-size: .9em;
+  font-size: 0.9em;
 }
 
-.hebergement_list .afficher {
+.hebergement_list .afficher h4 {
+  color: #000;
   display: block;
   flex-basis: 100%;
-  margin-top: 20px;
+  margin-top: 15px;
   font-size: 16px;
   font-weight: bold;
+  text-decoration: none;
 }
 
 .hebergement_list .afficher:hover {
@@ -354,14 +363,14 @@ main .heberg {
   font-size: 13px;
 }
 /* Activités */
-.activites_list #activites{
+.activites_list, #activites {
   display: flex;
   align-items: stretch;
   justify-content: stretch;
   flex-direction: column;
-  padding: 30px 0;
-  border-radius: 8px;
-  margin-bottom: 50px;
+  padding: 10px 0;
+  border-radius: 20px;
+  margin-bottom: 40px;
 }
 
 .activites_list h2 {
@@ -380,12 +389,11 @@ main .heberg {
 }
 
 .activites_loisir .activite {
-  width: 23%;
+  width: 22%;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
   height: 100%;
-  border-radius: 10px 10px 0 0;
   background-size: contain;
   border-radius: 15px;
   box-shadow: 0 0 6px 3px #F2F2F2;
@@ -402,11 +410,11 @@ main .heberg {
 }
 
 .activites_loisir .activite2 {
-  flex-basis: 60%;
+  flex-basis: 50%;
 }
 
 .activites_loisir .activite3 {
-  flex-basis: 40%;
+  flex-basis: 45%;
 }
 
 .activites_loisir .activite5 {
@@ -452,7 +460,6 @@ main .heberg {
   background-size: cover;
   background-position: center;
 }
-
 /* ****************************** smartphone, tablet and screen until 1024px ****************************** */
 @media all and (max-width: 1024px) {
 
@@ -486,7 +493,13 @@ main .heberg {
 @media (max-width: 766px) {
 
 h1 {
-  margin-top: 120px;;
+  margin-top: 120px;
+  text-align: center;
+  padding-top: 5px;
+}
+
+h3 {
+  text-align: center;
 }
 
 .navbar {
@@ -494,23 +507,6 @@ h1 {
   flex-flow: row wrap;
   justify-content: flex-end;
   align-items: flex-start;
-}
-
-.container {
-  padding: 0;
-}
-
-.filters .filter_name {
-  flex-basis: 100%;
-}
-
-header {
-  width: 100%;
-  padding: 0;
- }
-
-header .header .search_form, .header .filters, .header .info {
-  padding: 0 8px;
 }
 
 nav {
@@ -542,12 +538,13 @@ nav .nav_inscript .inscription {
 
 nav .nav_inscript .inscription {
   align-self: flex-end;
-  margin-right: 30px;
+  margin-right: 30px;background-position: center;
 }
 
 nav .nav_inscript .heb .act {
   display: flex;
   justify-content: space-between;
+  background-position: center;
 }
 
 nav .nav_inscript .nav_hebact a {
@@ -560,11 +557,55 @@ nav .nav_inscript .nav_hebact a .heb {
   font-weight: 700;
   border-top: none;
   border-bottom: 3px solid #0065FC;
+  justify-content: stretch;
+  align-items: stretch;
+}
+
+.nav_hebact{
+  align-items: stretch;
+  border-top-width: stretch;
+}
+
+.container {
+  background-position: center;
+  padding: 0;
+}
+
+.search_form {
+ justify-content: center;
+}
+
+.search_form .group_input button {
+ border-radius: 10px;
+}
+
+.filters .filter_name {
+  flex-basis: 100%;
+  text-align: left;
+  margin-left: 15px;
+}
+
+header {
+  width: 100%;
+  padding: 0;
+ }
+ 
+header .header .search_form, .header .filters, .header .info {
+  padding: 0 8px;
+  background-position: center;
+}
+
+.info1{
+  margin-left: 15px;
 }
 
 .heberg {
   flex-direction: column;
   justify-content: space-between;
+}
+
+.hebergement_list h2{
+  margin-left: 10px;
 }
 
 .heberg .hebergement_list {
@@ -581,7 +622,7 @@ nav .nav_inscript .nav_hebact a .heb {
 }
 
 .card_hebergement {
-  width: 86%;
+  width: 95%;
   box-shadow: 0 0 6px 3px rgba(180, 178, 178, 0.274);
   border-radius: 15px;
 }
@@ -597,6 +638,7 @@ nav .nav_inscript .nav_hebact a .heb {
 
 .heberg .hebergement_list .afficher {
   width: 90%;
+  text-decoration: none;
   padding-left: 15px;
 }
 
@@ -610,6 +652,10 @@ aside {
 
 aside .populaire_list {
   width: 90%; 
+}
+
+aside h2 #populaire {
+  justify-content: flex-start;
 }
 
 .activites_list {

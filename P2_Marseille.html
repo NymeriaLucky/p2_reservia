@@ -11,18 +11,31 @@
     <link rel="stylesheet" href="css/P2_SejourRESERVIA.css"/>
     <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'> <!--API font Google link-->
     <script src="https://kit.fontawesome.com/8d747dca8a.js" crossorigin="anonymous"></script> <!--Icons script -->
-   <title>Résultat recherche Marseille</title>
+   <!-- Requête AJAX -->
+   <script>
+    function loadResults() {
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+          if (this.readyState == 4 && this.status == 200) {
+            document.getElementById("resultats").innerHTML = this.responseText;
+          }
+        };
+        xhttp.open("GET", "P2_Marseille.html", true);
+        xhttp.send();
+      }
+   </script>
+    <title>Résultat recherche Marseille</title>
 </head>
  <body>
     <header><!-- HEADER -->
-        <div class="info">
-            <h4><span class="fas fa-info-circle"></span> Plus de 500 logements sont disponibles dans cette ville</h4>
-        </div>
+     <p class="info1">
+        <img src="images/Icones/info-circle.png">&nbsp;Plus de 500 logements sont disponibles dans cette ville
+     </p>
     </header>
     <main><!-- MAIN -->
         <div class="heberg" id="hebergement"> <!-- Ancre hébergement -->
                <aside> <!-- Les plus populaires - Affichage sur le côté -->
-                <h2 class="populaire_list">Les plus populaires<i class="fas fa-chart-line"></i></h2>
+                <h2 class="populaire_list" id="populaires">Les plus populaires<i class="fas fa-chart-line"></i></h2>
                    <a class="card_populaire">
                     <div class="card_image">
                         <img src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Hôtel le Soleil du matin" >
@@ -192,13 +205,15 @@
                                 </div>
                             </div>
                         </a>
-                      <a href="#" class="afficher"><h4>Afficher plus</h4></a>
+                      <div class="afficher">
+                        <a href="#populaires" class="populaire_list" onclick='loadResults()'>
+                            <h4>Afficher plus</h4></a>
+                      </div>
                     </div>
                 </section>
             </div> <!-- Liste des hébergements - Fin -->
         </div> <!-- Hébergement - Fin -->
-
-        <div id="activites"> <!-- Ancre Activités -->
+        <div class="activites"id="activites"> <!-- Ancre Activités -->
             <section>
                 <div class="activites_list"> <!-- Listes de activités --> 
                     <h2 class="title">Activités à Marseille</h2>
