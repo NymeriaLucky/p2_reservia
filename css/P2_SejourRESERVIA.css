@@ -28,7 +28,7 @@ body {
   float: right;
   border-top: solid;
   border-color: rgba(255, 255, 255, 0.5);
-  color: #0065FC;
+  color:black;
   padding: 35px;
   justify-content: right;
   text-decoration: none;
@@ -39,7 +39,7 @@ body {
 /* Links - change color on hover */
 .nav_selection a:hover {
   border-color:#0065FC;
-  color:black;
+  color:#0065FC;
  }
 
 .nav_selection a.active {
@@ -115,7 +115,12 @@ body {
   align-items: center;
 }
 
-.search_form .group_input button {
+.search_form .group_input #search_button .searchText {
+  background-color:#0065FC;
+  color: white;
+}
+
+.search_form .group_input #search_button {
   height: 100%;
   border: none;
   background-color: #0065FC;
@@ -125,7 +130,7 @@ body {
   cursor: pointer;
 }
 
-.search_form .group_input button:hover {
+.search_form .group_input #search_button:hover {
   transform: translateY(-1px);
   box-shadow: 1px 1px 1px 1px #F2F2F2;
 }
@@ -482,7 +487,6 @@ main .heberg {
 
 .navbar {
   display: flex;
-  float: left;
 }
  
 .nav_logo {
@@ -510,7 +514,6 @@ main .heberg {
 @media (max-width: 766px) {
 
 h1 {
-  margin-top: 120px;
   text-align: center;
   padding-top: 25px;
 }
@@ -564,6 +567,7 @@ nav .nav_selection .nav_hebact a {
   display: flex;
   border-bottom: solid;
   border-bottom-color: rgba(255, 255, 255, 0.5);
+  justify-content: center;
 }
 /* Links - change color on hover */
 .nav_selection a:hover {
@@ -586,8 +590,21 @@ nav .nav_selection .nav_hebact a {
  justify-content: center;
 }
 
-.search_form .group_input button {
- border-radius: 10px;
+.search_form .group_input #search_button .fa-search {
+    display: block;
+  }
+
+.search_form .group_input #search_button .searchText{
+    display: none;
+  }
+
+.search_form .group_input #search_button {
+  border-radius: 10px;
+  width: 65px;
+}
+
+.search_form #fa-map-marker{ 
+  width: 30px;
 }
 
 .filters .filter_name {
