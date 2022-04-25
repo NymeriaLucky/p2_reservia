@@ -508,6 +508,7 @@ main .heberg {
   align-items:stretch;
 }
 
+
 } /* FIN smartphone, tablet and screen until 1024px */
 
 /* ****************************** smartphone only ****************************** */
@@ -808,3 +809,28 @@ aside .card_populaire .card_body div .card_populaire_title {
 }
 
 } /* FIN tablet */
+
+/* Défilement */
+.fab-container{
+  position:fixed;
+  bottom:50px;
+  right:50px;
+  cursor:pointer;
+  z-index: 1;
+  }
+
+  .iconbutton{
+    width:50px;
+    height:50px;
+    border-radius: 100%;
+    background: #000000;
+    box-shadow: 10px 10px 5px #aaaaaa;
+    }
+
+  .iconbutton i{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    height: 100%;
+    color:white;
+  }
